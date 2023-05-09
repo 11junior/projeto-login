@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="stylesheet" href="../css/signin.css">
+ 
 </head>
 <body>
   <div class="container" >
@@ -14,7 +15,7 @@
     <div class="content">      
       <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action=""> 
+        <form method="get" action=""> 
           <h1>Login</h1> 
           <p> 
             <label for="nome_login">Seu e-Mail</label>
@@ -23,7 +24,7 @@
            
           <p> 
             <label for="email_login">Sua Senha</label>
-            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+            <input id="input_senha_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
           </p>
            
           <p> 
@@ -32,7 +33,7 @@
           </p>
            
           <p> 
-            <input type="submit" value="Logar" /> 
+            <input id = "btn_logar" type="button" value="Logar" /> 
           </p>
            
           <p class="link">
@@ -44,7 +45,7 @@
  
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
-        <form method="post" action=""> 
+        <form method="get" action=""> 
           <h1>Cadastro</h1> 
            
           <p> 
@@ -74,5 +75,6 @@
       </div>
     </div>
   </div>  
+  <script src="../js/signin.js"></script>
 </body>
 </html>

@@ -1,12 +1,26 @@
- let btn = document.querySelector('.fa-eye')
+ let btnLogar = document.getElementById('btn_logar')
 
- btn.addEventListener('click', ()=>{
-    let inputSenha = document.querySelector('#senha')
+ 
+ 
 
+ btnLogar.addEventListener('click', ()=>{
+   
+
+
+
+
+
+    let inputSenha = document.getElementById('input_senha_login')
+
+    if(inputSenha.value != "")
+    {
+        alert("PArabens voce logou")
+    }
+    
     if(inputSenha.getAttribute('type') == 'password'){
-        inputSenha.setAttribute('tipy', 'text')
+        inputSenha.setAttribute('type', 'text')
 } else{
-    inputSenha.setAttribute('tipy', 'password')
+    inputSenha.setAttribute('type', 'password')
 }
  })
 
@@ -47,6 +61,7 @@
 
         localStorage.setItem('token',token)
         localStorage.setItem('userLogado', JSON.stringify(userValid))
+        console.log("Esto executando essa linha");
     }else {
         userLabel.setAttribute('style', 'coler: red')
         usuario.setAttribute('style', 'borde-color: red')
